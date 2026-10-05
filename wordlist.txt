@@ -1,0 +1,15 @@
+admin
+administrator
+admin_login
+panel
+control
+cpanel
+webadmin
+sysadmin
+root
+manage
+management
+manager
+login_admin
+secret
+dashboard
