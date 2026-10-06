@@ -14,7 +14,7 @@ hedef = input("Target: ")
 print(f"target: {hedef}")
 
 try:
-    with open("kelimeler.txt", "r") as dosya:
+    with open("wordlist.txt", "r") as dosya:
         for satir in dosya:
             yol = satir.strip()
 
@@ -28,5 +28,5 @@ try:
                 pass
 
 except FileNotFoundError:
-    print("❌ error: 'kelimeler.txt' file not found!")
+    print("❌ error: 'wordlist.txt' file not found!")
 exit()
