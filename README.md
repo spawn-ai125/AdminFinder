@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- Proje Logosu ve Havalı Başlık -->
-<h1>⚡ AdminFinder v1.0.0 ⚡</h1>
+<h1>⚡ AdminFinder v1.1.0 ⚡</h1>
 <p align="center">
   <img src="https://shields.io" alt="Python Version">
   <img src="https://shields.io" alt="Security Tool">
