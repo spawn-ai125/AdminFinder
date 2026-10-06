@@ -12,6 +12,12 @@ banner = r"""
 print(banner)
 hedef = input("Target: ")
 print(f"target: {hedef}")
+oturum = requests.Session()
+oturum.headers.update(
+    {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36"
+    }
+)
 
 try:
     with open("wordlist.txt", "r") as dosya:
@@ -20,7 +26,7 @@ try:
 
             tam_adres = hedef + "/" + yol
             try:
-                cevap = requests.get(tam_adres, timeout=3)
+                cevap = oturum.get(tam_adres, timeout=3)
 
                 if cevap.status_code == 200:
                     print(f"[+] 200 OK: {tam_adres}")
